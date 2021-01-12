@@ -17,7 +17,7 @@ class ClientController extends Controller
 
     public function index()
     {
-        $model = $this->client->paginate();
+        $model = $this->client->paginate(2);
         return view('client.index', compact('model'));
     }
 
